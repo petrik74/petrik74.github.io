@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Moja Webstránka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: black;
+      padding: 15px;
+      text-align: center;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00ffcc;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 40px;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    #section-0 { background: #111; }
+    #section-1 { background: #333; }
+    #section-2 { background: #555; }
+
+    .hero h1 {
+      font-size: 60px;
+      margin: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #00ffcc;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#section-0">Domov</a>
+  <a href="#section-1">O mne</a>
+  <a href="#section-2">Kontakt</a>
+</nav>
+
+<section id="section-0">
+  <div>
+    <h1>Vitaj na mojej stránke</h1>
+    <a href="#section-1" class="btn">Zisti viac ↓</a>
+  </div>
+</section>
+
+<section id="section-1">
+  <div>
+    Toto je sekcia O mne
+  </div>
+</section>
+
+<section id="section-2">
+  <div>
+    Kontakt: mojemail@email.com
+  </div>
+</section>
+
+</body>
+</html>
